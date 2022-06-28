@@ -12,15 +12,24 @@
 .container-fluid {
     height: 100px;
     font-size: larger;
-    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    background-color: rgb(106, 106, 106);
+    color: rgb(255, 255, 255);
 }
 
 /* ----------MAIN---------- */
-h1 {
+.titulo-index {
     margin-top: 100px;
+}
+
+.titulo-index2 {
+    @extend .titulo-index;
     text-align: center;
     margin-bottom: 100px;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    color: black;
 }
 
 h4 {
@@ -111,12 +120,18 @@ h1 {
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.15);
 }
 
-h2{
-display: flex;
+
+@mixin datos {
+    display: flex;
 align-items: center;
 justify-content: space-around ;
 margin-top: 50px;
-text-shadow: 4px 4px 2px rgba(0,0,0,0.15);
+color: black;
+text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.descripcion {
+ @include datos;
 }
 
 main div h4 {
@@ -137,7 +152,14 @@ main div img {
 }
 
 .row{
-    margin: 10px;
+    margin: 0px;
+}
+
+.row2{
+    @extend .row;
+    padding: 0;
+    border-radius: 2px;
+
 }
 
 
@@ -354,6 +376,7 @@ h6 {
 #navbar {
     height: 40px;
 }
+
 
 .container-fluid {
     height: 100px;

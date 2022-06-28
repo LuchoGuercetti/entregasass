@@ -8,15 +8,21 @@
 
 .container-fluid {
   height: 100px;
-  font-size: larger;
-  font-weight: 500; }
+  font-size: larger; }
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #6a6a6a;
+  color: white; }
 
 /* ----------MAIN---------- */
-h1 {
-  margin-top: 100px;
+.titulo-index, .titulo-index2 {
+  margin-top: 100px; }
+
+.titulo-index2 {
   text-align: center;
   margin-bottom: 100px;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25); }
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+  color: black; }
 
 h4 {
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.15); }
@@ -55,7 +61,7 @@ footer strong {
 #text-3 {
   color: white; }
 
-footer div .row div {
+footer div .row div, footer div .row2 div {
   display: flex;
   flex-wrap: nowrap;
   text-align: start; }
@@ -86,11 +92,12 @@ h1 {
   margin-bottom: 100px;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.15); }
 
-h2 {
+.descripcion {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 50px;
+  color: black;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.15); }
 
 main div h4 {
@@ -106,8 +113,12 @@ main div img {
   margin-top: 100px;
   margin-bottom: 100px; }
 
-.row {
-  margin: 10px; }
+.row, .row2 {
+  margin: 0px; }
+
+.row2 {
+  padding: 0;
+  border-radius: 2px; }
 
 /* -------------FOOTER------------ */
 footer {
@@ -124,7 +135,7 @@ footer strong {
 #text-3 {
   color: white; }
 
-footer div .row div {
+footer div .row div, footer div .row2 div {
   display: flex;
   flex-wrap: nowrap;
   text-align: start; }
@@ -194,7 +205,7 @@ footer strong {
 #text-3 {
   color: white; }
 
-footer div .row div {
+footer div .row div, footer div .row2 div {
   display: flex;
   flex-wrap: nowrap;
   text-align: start; }
@@ -254,7 +265,7 @@ footer strong {
 #text-3 {
   color: white; }
 
-footer div .row div {
+footer div .row div, footer div .row2 div {
   display: flex;
   flex-wrap: nowrap;
   text-align: start; }
@@ -305,7 +316,7 @@ main div img {
   margin-top: 100px;
   margin-bottom: 100px; }
 
-.row {
+.row, .row2 {
   margin: 10px; }
 
 /* -------------FOOTER------------ */
@@ -323,7 +334,7 @@ footer strong {
 #text-3 {
   color: white; }
 
-footer div .row div {
+footer div .row div, footer div .row2 div {
   display: flex;
   flex-wrap: nowrap;
   text-align: start; }
